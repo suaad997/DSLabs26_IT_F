@@ -9,7 +9,7 @@ public class Main {
 
 
     Arrayss arr=new Arrayss();
-       //int []a={15,2,83,43,95};
+       int []a={15,2,83,43,95};
        int []a2= new int[7];
        arr.input(a2);
        arr.traversal(a2);

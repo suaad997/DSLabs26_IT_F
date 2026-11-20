@@ -10,9 +10,23 @@ public class Main {
 
     Arrayss arr=new Arrayss();
        int []a={15,2,83,43,95};
-       int []a2= new int[7];
-       arr.input(a2);
-       arr.traversal(a2);
+//       int result=arr.LinearSearch(a,100);
+//
+//       if(result!=-1)
+//        System.out.println("value found at index"+result);
+//       else
+//           System.out.println("value not found ");
+
+
+        // a[3]=16;
+        arr.delete(a,9);
+        //arr.traversal(a);
+
+
+
+
+        // int []a2= new int[7];
+       //arr.input(a2);
 
 
 

@@ -31,4 +31,28 @@ public void input(int []a){
     }
 }
 
+public void update(int []a,int index, int nvalue){
+    if(index<0 || index>=a.length)
+        System.out.println("Index not found!!!!");
+    else{
+    a[index]=nvalue;}
+
+}
+    public void delete(int []a,int index){
+        if(index<0 || index>=a.length) {
+            throw new IllegalArgumentException("Index not found!!!!!!");
+        }
+        else{
+            a[index]=0;}
+
+    }
+    public int LinearSearch(int[]a, int svalue){
+        for(int i=0 ; i<a.length;i++){
+            if(svalue==a[i])
+                return i;
+        }
+        return -1;
+    }
+
+
 }

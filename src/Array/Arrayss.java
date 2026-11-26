@@ -45,7 +45,15 @@ public void update(int []a,int index, int nvalue){
         else{
             a[index]=0;}
 
+    } //{1,5,7,2,2}    1,4,5,7,-77788877777  //4
+    public void shift_left_delete(int []a, int index){
+    for(int i=index; i<a.length-1;i++){
+        a[i]=a[i+1];
     }
+    a[a.length-1]=Integer.MIN_VALUE;
+    }
+
+
     public int LinearSearch(int[]a, int svalue){
         for(int i=0 ; i<a.length;i++){
             if(svalue==a[i])
@@ -53,6 +61,38 @@ public void update(int []a,int index, int nvalue){
         }
         return -1;
     }
+
+
+
+    //a={1,3,4,5,6,12,17,18}     s=17  f=6  l=7
+    public int binarySearch(int []a, int svalue, int findex, int lindex){
+
+    while (findex<=lindex){
+    int mid =(findex+lindex)/2;  //6
+    if(svalue==a[mid])
+        return mid;
+    if(svalue>a[mid])
+        findex=mid+1;  //6
+    if(svalue<a[mid])
+        lindex=mid-1;
+    }
+    return -1;
+    }
+    public int binarySearch(int []a, int svalue){
+        int findex=0,  lindex=a.length-1;
+
+        while (findex<=lindex){
+            int mid =(findex+lindex)/2;  //6
+            if(svalue==a[mid])
+                return mid;
+            if(svalue>a[mid])
+                findex=mid+1;  //6
+            if(svalue<a[mid])
+                lindex=mid-1;
+        }
+        return -1;
+    }
+
 
 
 }

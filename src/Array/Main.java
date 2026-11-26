@@ -6,20 +6,25 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
-
     Arrayss arr=new Arrayss();
-       int []a={15,2,83,43,95};
-//       int result=arr.LinearSearch(a,100);
+       int []a={15,2,83,43,5,22,3,1,100};
+       arr.shift_left_delete(a,3);
+        arr.shift_left_delete(a,3);
+
+        arr.traversal(a);
+
+//        Arrays.sort(a);
+//       arr.traversal(a);
+//       int result=arr.binarySearch(a,33,0,a.length-1);
 //
 //       if(result!=-1)
-//        System.out.println("value found at index"+result);
+//        System.out.println("value found at index:"+result);
 //       else
 //           System.out.println("value not found ");
 
 
         // a[3]=16;
-        arr.delete(a,9);
+//        arr.delete(a,9);
         //arr.traversal(a);
 
 
